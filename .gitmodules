@@ -1,0 +1,3 @@
+[submodule "javascript/javascript/tictacto"]
+	path = javascript/javascript/tictacto
+	url = https://github.com/Moritzvonra/exercises.git
