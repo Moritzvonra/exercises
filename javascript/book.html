@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bookstyle.css">
+</head>
+<body>
+    <div class="content">
+        <h1>Moritz Bookstore</h1>
+        <div class="addbutton">
+            <button type="addBook" id="addButton">Add Book</button>
+        </div>
+        <div class="bookshelf" id="bookshelf">
+        </div>
+    </div>
+    <div class="popup" id="popup">
+        <div class="header">
+            <h1>Add a new book</h1>
+        </div>
+        <div class="subheader">
+            <p>Please enter some details about the book to add it to the library.</p>
+        </div>
+        <div class="inputarea">
+            <div class="formArea">
+                <label for="Title">Title*</label>
+                <input type="text" name="title" id="title" required>
+            </div>
+            <div class="formArea">
+                <label for="author">Author</label>
+                <input type="text" name="author" id="author">
+            </div>
+            <div class="formArea">
+                <label for="Pages">No. of Pages</label>
+                <input type="number" name="pages" id="pages" min="1">
+            </div>
+            <div class="formArea">
+                <label for="readStatus">Did you already read it?</label>
+                <select name="readStatus" id="readStatus">
+                    <option value="yes">yes</option>
+                    <option value="no">no</option>
+                </select>
+            </div>
+            <div class="buttonArea">
+                <button type="cancel" id="formCancel">Cancel</button>
+                <button type="submit" id="formSubmit">Submit book</button>
+            </div>
+        </div>
+    </div>
+    <script src="object.js"></script>
+</body>
+</html>

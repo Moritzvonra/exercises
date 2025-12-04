@@ -1,0 +1,179 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.addbutton {
+    display: flex;
+    justify-content: center;
+}
+
+#addButton {
+    margin-top: 2%;
+    height: 50px;
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(162, 245, 203);
+    color: white;
+    font-weight: 600;
+}
+
+
+.content {
+    display: grid;
+}
+
+.bookshelf {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    gap: 50px;
+    margin: 50px;
+    justify-content: center;
+}
+
+.book-item {
+    display:grid;
+    max-width: 500px;
+    max-height: 300px;
+    background-color: lightcoral;
+    border-radius: 10px;
+    border-color: lightgrey;
+    box-shadow: 3px 3px;
+    padding: 10px;
+}
+ul, li {
+    appearance: none;
+    line-height: 1.5;
+    font-size: 18px;
+    list-style-type: none
+}
+
+.list-item-title {
+    display: block;
+    font-size: larger;
+    font-weight: 600;
+
+}
+
+.readStatusDiv {
+    display: flex;
+    padding-left: 40px;
+    appearance: none;
+}
+
+#checkbox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-left: 15px;
+}
+
+#removeButton {
+    margin-right: 20px;
+    border-radius: 5px;
+    height: 22px;
+    width: 30%;
+    justify-self: right;
+    border: none;
+
+}
+
+.list-item-title:first-letter, 
+.list-item-author:first-letter,
+.list-item-pages:first-letter,
+.list-item-readStatus:first-letter
+{
+    text-transform: uppercase;
+}
+
+.popup {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    height: 40vh;
+    width: 60vh;
+    justify-self: center;
+    align-self: center;
+    padding: 50px;
+    background-color: rgb(218, 244, 252);
+    border-radius: 15px;
+    border-color: lightgray;
+    border-width: 1px;
+    gap: 5%;
+    align-items: top;
+    box-shadow: 3px 3px grey;
+}
+
+.header {
+    height: 25%;
+}
+
+.subheader {
+    margin-top: -10%;
+    height: fit-content;
+    width: fit-content;
+}
+
+.inputarea {
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    width: 100%;
+    gap: 10%;
+}
+
+.formArea {
+    display: grid;
+    grid-template-columns: 30% 80%;
+    grid-template-rows: repeat(100%);
+    gap: 5%;
+}
+
+.label {
+    grid-area: 1;
+    display: flex;
+    align-self: left;
+    padding-top: -10px;
+    font-size: 22px;
+}
+
+input,
+select {
+    display: grid;
+    width: 80%;
+    height: 22px;
+    border-radius: 5px;
+    border-color: none;
+}
+
+.buttonArea {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5%;
+}
+
+#formSubmit, 
+#formCancel {
+    width: 30%;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    border-color: none;
+    box-shadow: 1px 1px grey;
+}
+
+#formSubmit {
+    background-color: rgb(34, 201, 117);
+    color: white;
+}
+
+#formCancel {
+    background-color: rgb(255, 168, 168);
+    color: white;
+}
+
